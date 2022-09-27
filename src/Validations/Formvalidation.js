@@ -1,5 +1,6 @@
 import validator from 'validator'
 
+// Validate Form values 
 
 export const ValidateForm = (data) => {
 
@@ -23,6 +24,8 @@ export const ValidateForm = (data) => {
  
     return true
 }
+
+// Validate Login form values 
 
 export const loginValidation = (username , password) => {
 

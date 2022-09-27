@@ -1,5 +1,7 @@
 import moment from 'moment-timezone';
 
+// Convert Timestamp to String to display in table
+
 export const convertDateToString = (date) => {
 
     var n = new Date(date);
@@ -12,6 +14,8 @@ export const convertDateToString = (date) => {
     const finalDate = n.toLocaleString("en-EN", options)
     return finalDate;
 }
+
+// To convert date format to display date in datepicker when date selected
 
 export const updatedStartDate = (date) => {
 

@@ -22,6 +22,8 @@ class ListingPage extends Component {
       this.state.asyncState = false
     }
 
+    // Delete Employee using id
+
     onDelete = async(id,e) => {
 
       e.preventDefault();
@@ -34,9 +36,13 @@ class ListingPage extends Component {
       this.setState({asyncState : false}) 
     }
 
+  // Search employee using name
+
    searchByName = async() => {
     this.props.findEmployeeByName(this.state.name)
    }
+
+  // Function to remove token from local storage
 
    handleLogout = () => {
     this.props.removeToken();

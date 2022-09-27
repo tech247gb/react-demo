@@ -1,6 +1,8 @@
 import { CREATE_EMPLOYEE , RETRIEVE_EMPLOYEE , DELETE_EMPLOYEE , UPDATE_EMPLOYEE , DELETE_ALL_EMPLOYEES} from "./Types";
 import { create , getAll , deleteone , findById , update , deleteAll , findByName} from "../Services/employee.service";
 
+// Employee Creation api call and dispatch function
+
 export const createEmployee = (payload) => async (dispatch) => {
     try {
       const res = await create(payload);
@@ -16,6 +18,8 @@ export const createEmployee = (payload) => async (dispatch) => {
 
   };
 
+// Get Employee details api call and retrieve data from store 
+
   export const retrieveEmployeeDetails = () => async (dispatch) => {
 
     try {
@@ -30,6 +34,7 @@ export const createEmployee = (payload) => async (dispatch) => {
     }
   };
 
+// Delete employee using id api call and dispatch function
 
 export const deleteEmployee = (id) => async (dispatch) => {
     try {
@@ -45,7 +50,7 @@ export const deleteEmployee = (id) => async (dispatch) => {
    
   };
 
-
+// To delete all employees api call and dispatch function
 
   export const deleteAllEmployees = () => async (dispatch) => {
     try {
@@ -59,9 +64,9 @@ export const deleteEmployee = (id) => async (dispatch) => {
       console.log(err);
     }
  
-   
   };
  
+// Search employee by id api call and dispatch function
 
 export const findEmployeeById = (id) => async (dispatch) => {
     try {
@@ -75,6 +80,8 @@ export const findEmployeeById = (id) => async (dispatch) => {
       console.log(err);
     }
   }; 
+
+// Update employee details api call using id and dispatch function
   
 export const updateEmployee = (id,data) => async (dispatch) => {
 
@@ -91,6 +98,8 @@ export const updateEmployee = (id,data) => async (dispatch) => {
       return Promise.reject(err);
     }
   };
+
+// Find employee by name api call and dispatch function for searching employee
 
 export const findEmployeeByName = (name) => async (dispatch) => {
     try {

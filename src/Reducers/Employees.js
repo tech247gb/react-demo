@@ -2,6 +2,8 @@ import { CREATE_EMPLOYEE , DELETE_EMPLOYEE, RETRIEVE_EMPLOYEE , UPDATE_EMPLOYEE 
 
 const initialState = [];
 
+// Reducer for Employee store
+
 function employeeReducer(employees = initialState, action) {
     const { type, payload } = action;
   

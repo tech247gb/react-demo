@@ -10,6 +10,7 @@ function Loginpage(props) {
   const [password , setPassword] = useState("")
   const [asyncState , setAssyncState] = useState(false)
  
+  // Fetch and Store token to local storage
   
   const LoginSubmit = async(e) => {
     e.preventDefault();

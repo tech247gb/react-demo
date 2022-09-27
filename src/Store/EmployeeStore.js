@@ -8,5 +8,6 @@ const initialState = {}
 
 const middleware = [thunk];
 
+// Employee store
 
 export const employeeStore = configureStore({ reducer: rootReducer } ,initialState,composeWithDevTools(applyMiddleware(...middleware)))

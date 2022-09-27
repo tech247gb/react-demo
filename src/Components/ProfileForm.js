@@ -46,6 +46,8 @@ class ProfileForm extends Component{
          this.setState({asyncState : false})   
         }     
       }
+
+      // set details to state when onChange trigger
     
       handleChange = (e) => {
 
@@ -53,6 +55,8 @@ class ProfileForm extends Component{
           ...this.state.employeeDetails,
           [e.target.name]: e.target.value}})
       }
+
+      // Call create or update function in ManageForm according to id present or not
 
       handleCreate = async(e) => {
         e.preventDefault();     

@@ -1,3 +1,5 @@
+// Define Store Dispatch functions
+
 export const CREATE_EMPLOYEE = "CREATE_EMPLOYEE";
 export const RETRIEVE_EMPLOYEE = "RETRIEVE_EMPLOYEE";
 export const DELETE_EMPLOYEE = "DELETE_EMPLOYEE";
